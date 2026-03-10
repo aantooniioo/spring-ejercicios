@@ -1,4 +1,4 @@
-# Spring Framework Exercises
+# Ejercicios Spring Framework 
 
 Proyecto realizado durante el curso de Spring Framework.
 
