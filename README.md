@@ -1,11 +1,13 @@
-# Ejercicios Spring Framework 
+# Spring Ejercicios
 
-Proyecto realizado durante el curso de Spring Framework.
+Ejercicios realizados durante el curso de Spring Framework.
 
-Incluye:
+## Contenido
 
-- REST Controllers
-- Validaciones
-- Logs
+- Proyecto Spring Boot con servicios REST
+- Validaciones con Bean Validation
+- Logs con SLF4J
 - Exception Handler
-- Pruebas con Postman
+- Pruebas realizadas con Postman
+
+Las capturas de los ejercicios opcionales se encuentran en la carpeta `capturas-opcionales`.
