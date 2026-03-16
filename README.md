@@ -1,13 +1,23 @@
-# Spring Ejercicios
+# Spring Ejercicios - Programa de Becarios Future Space
 
-Ejercicios realizados durante el curso de Spring Framework.
+Repositorio con los ejercicios realizados durante el programa de formación.
 
-## Contenido
+## Estructura
 
-- Proyecto Spring Boot con servicios REST
-- Validaciones con Bean Validation
-- Logs con SLF4J
-- Exception Handler
-- Pruebas realizadas con Postman
+### Java
+- **clean-code-refactorizacion**
+  Ejercicios de Clean Code y refactorización en Java.
 
-Las capturas de los ejercicios opcionales se encuentran en la carpeta `capturas-opcionales`.
+### Spring
+- **spring-framework**
+  Proyecto Spring Boot con controladores, servicios y manejo de excepciones.
+
+- **spring-data-jpa**
+  Proyecto con entidades, repositorios y configuración de Spring Data JPA.
+
+## Tecnologías
+- Java
+- Spring Boot
+- Spring Data JPA
+- Maven
+- Git
