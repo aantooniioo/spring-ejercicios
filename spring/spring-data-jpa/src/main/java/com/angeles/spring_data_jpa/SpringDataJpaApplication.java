@@ -1,7 +1,8 @@
 package com.angeles.spring_data_jpa;
 
-import com.angeles.spring_data_jpa.entity.Libro;
 import com.angeles.spring_data_jpa.repository.LibroRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -10,41 +11,27 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringDataJpaApplication implements CommandLineRunner {
 
+	private static final Logger log = LoggerFactory.getLogger(SpringDataJpaApplication.class);
+
 	@Autowired
 	private LibroRepository libroRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDataJpaApplication.class, args);
-
 	}
 
 	@Override
 	public void run(String... args) {
 
-		System.out.println("Ejercicio 4:");
+		log.info("Mostrando todos los libros de la base de datos");
+
+		libroRepository.findAll()
+				.forEach(libro -> log.info(libro.getTitulo()));
+
+		log.info("Mostrando libros publicados después de 2001");
+
 		libroRepository.librosPublicadosDespuesDe2001()
-				.forEach(libro -> System.out.println(libro.getTitulo()));
+				.forEach(libro -> log.info(libro.getTitulo()));
 
-		System.out.println("\nEjercicio 5:");
-		libroRepository.findByAnioPublicacionGreaterThan(2001)
-				.forEach(libro -> System.out.println(libro.getTitulo()));
-
-		System.out.println("\nEjercicio 6 - Libros publicados en 2001:");
-		libroRepository.findByAnioPublicacion(2001)
-				.forEach(libro -> System.out.println(libro.getTitulo()));
-
-		System.out.println("\nEjercicio 6 - Libro con ISBN 87919878:");
-		Libro libro = libroRepository.findByIsbn("87919878");
-		if (libro != null) {
-			System.out.println(libro.getTitulo());
-		}
-
-		System.out.println("\nEjercicio 6 - Libros de la editorial RBA:");
-		libroRepository.findByIdEditorial(1)
-				.forEach(l -> System.out.println(l.getTitulo()));
-
-		System.out.println("\nEjercicio 6 - Libros PLANETA publicados en 1986:");
-		libroRepository.findByIdEditorialAndAnioPublicacion(1, 1986)
-				.forEach(l -> System.out.println(l.getTitulo()));
 	}
 }

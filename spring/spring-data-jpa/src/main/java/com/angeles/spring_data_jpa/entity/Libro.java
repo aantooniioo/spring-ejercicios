@@ -1,6 +1,9 @@
 package com.angeles.spring_data_jpa.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "libros")
@@ -11,12 +14,16 @@ public class Libro {
     @Column(name = "idLibro")
     private Integer idLibro;
 
+    @NotBlank
+    @Size(max = 255)
     @Column(name = "titulo")
     private String titulo;
 
+    @Size(max = 255)
     @Column(name = "isbn")
     private String isbn;
 
+    @NotNull
     @Column(name = "anioPublicacion")
     private Integer anioPublicacion;
 
@@ -29,8 +36,7 @@ public class Libro {
     @Column(name = "idTematica")
     private Integer idTematica;
 
-    public Libro() {
-    }
+    public Libro() {}
 
     public Integer getIdLibro() {
         return idLibro;
