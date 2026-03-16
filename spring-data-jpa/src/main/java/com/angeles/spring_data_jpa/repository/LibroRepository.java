@@ -12,6 +12,9 @@ public interface LibroRepository extends JpaRepository<Libro, Integer> {
     @Query("SELECT l FROM Libro l WHERE l.anioPublicacion > 2001")
     List<Libro> librosPublicadosDespuesDe2001();
 
+    // Ejercicio 5
+    List<Libro> findByAnioPublicacionGreaterThan(Integer anio);
+
 
 }
 
