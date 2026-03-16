@@ -23,3 +23,15 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+# IntelliJ
+.idea/
+
+# Maven
+target/
+
+# IntelliJ module files
+*.iml
+
+# logs
+*.log

@@ -1,5 +1,4 @@
-package cleanCodeRefactorizacion;
-/*
+package cleanCodeRefactorizacion;/*
 Ejercicio 2 - Refactoración
 
 Se crea una clase cleanCodeRefactorizacion.Address para separar la responasbilidad
