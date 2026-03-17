@@ -4,7 +4,7 @@ Proyecto desarrollado como parte de la formación en **Spring Data JPA**, enfoca
 
 ---
 
-##  Funcionalidades implementadas
+## Funcionalidades implementadas
 
 - Repositorios JPA
 - Consultas personalizadas con `@Query`
@@ -17,7 +17,7 @@ Proyecto desarrollado como parte de la formación en **Spring Data JPA**, enfoca
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Java 17
 - Spring Boot
@@ -27,7 +27,7 @@ Proyecto desarrollado como parte de la formación en **Spring Data JPA**, enfoca
 
 ---
 
-## ▶️ Ejecución del proyecto
+## Ejecución del proyecto
 
 1. Clonar el repositorio
 2. Ejecutar la clase principal:
@@ -39,7 +39,7 @@ Proyecto desarrollado como parte de la formación en **Spring Data JPA**, enfoca
 
 ---
 
-## 📸 Evidencias
+## Evidencias
 
 Las capturas de ejecución se encuentran en la carpeta:
 `capturas`
