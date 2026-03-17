@@ -36,7 +36,19 @@ public class Libro {
     @Column(name = "idTematica")
     private Integer idTematica;
 
-    public Libro() {}
+    public Libro() {
+    }
+
+    public Libro(Integer idLibro, String titulo, String isbn, Integer anioPublicacion,
+                 Integer idAutor, Integer idEditorial, Integer idTematica) {
+        this.idLibro = idLibro;
+        this.titulo = titulo;
+        this.isbn = isbn;
+        this.anioPublicacion = anioPublicacion;
+        this.idAutor = idAutor;
+        this.idEditorial = idEditorial;
+        this.idTematica = idTematica;
+    }
 
     public Integer getIdLibro() {
         return idLibro;
