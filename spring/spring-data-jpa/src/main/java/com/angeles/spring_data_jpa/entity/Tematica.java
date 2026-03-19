@@ -8,7 +8,6 @@ public class Tematica {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idTematica")
     private Integer idTematica;
 
     private String categoria;

@@ -8,7 +8,6 @@ public class Editorial {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idEditorial")
     private Integer idEditorial;
 
     private String nombre;

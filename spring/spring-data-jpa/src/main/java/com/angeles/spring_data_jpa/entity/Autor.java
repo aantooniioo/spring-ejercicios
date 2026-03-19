@@ -7,7 +7,6 @@ import jakarta.persistence.*;
 public class Autor {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name = "idAutor")
     private Integer idAutor;
 
     private String nombre;

@@ -11,7 +11,6 @@ public class Libro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idLibro")
     private Integer idLibro;
 
     @NotBlank
