@@ -1,7 +1,6 @@
 package com.angeles.spring_data_jpa.service;
 
 import com.angeles.spring_data_jpa.entity.Autor;
-import com.angeles.spring_data_jpa.entity.Libro;
 import com.angeles.spring_data_jpa.repository.AutorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
